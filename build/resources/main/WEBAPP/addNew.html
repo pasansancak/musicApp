@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/funcs.js"></script>
+    <title>Music App</title>
+</head>
+
+<body onload="loadMusics()", style="background-color: #191414">
+<center>
+    <h1 style="color: #1db954; font-family: Impact, Charcoal, sans-serif">Welcome to the Music App</h1>
+
+    <form id="search-form">
+        <input type="text" id="search-input" name="search-input", style="padding: 5px", placeholder="Song or Artist name">
+        <button type="submit", style="background-color: #191414; color: #1db954; padding: 5px", onclick="searchButtonClicked(search-input)">Search</button>
+    </form><br>
+
+
+    <form id="playlist-form">
+
+    <div id="song-container">
+    </div><br>
+
+        <input type="text" id="playlist-input" name="playlist-input", style="padding: 5px", placeholder="Playlist Name", minlength="5">
+        <button type="submit" style="background-color: #191414; color: #1db954; padding: 5px", onclick="createButtonClicked()">Create</button>
+    </form><br>
+
+
+    <p style="color: lightgrey; font-family: Impact, Charcoal, sans-serif", id="report-message"></p><br>
+    <a href="myPlaylist.html", style="color: #1db954">View My Playlists</a>
+
+</center>
+</body>
+</html>
